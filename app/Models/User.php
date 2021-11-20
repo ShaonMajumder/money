@@ -11,6 +11,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    protected $connection = 'mysql2';
 
     /**
      * The attributes that are mass assignable.
@@ -42,3 +43,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+/*
+class User extends Eloquent {
+
+    protected $connection = 'mysql2';
+
+}
+*/
