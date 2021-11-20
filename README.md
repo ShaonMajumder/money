@@ -8,7 +8,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-
+## Multi-Authentication Fixed
+https://dev.to/donejeh/common-mistake-sharing-session-across-multiple-laravel-subdomain-2a51
 
 ## Build
 helpeful links -
