@@ -21,6 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/accounts', function () {
+    return redirect('http://accounts.robist.test');
+})->name('accounts');
+
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users');
 Route::get('/tasks', [App\Http\Controllers\SprintController::class, 'index'])->name('sprint');
 
