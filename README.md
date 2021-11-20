@@ -9,6 +9,7 @@
 </p>
 
 ## Multi-Authentication Fixed
+https://hdtuto.com/article/multi-database-connection-in-laravel-8-example
 https://dev.to/donejeh/common-mistake-sharing-session-across-multiple-laravel-subdomain-2a51
 
 ## Build
