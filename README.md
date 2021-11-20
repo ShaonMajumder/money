@@ -11,6 +11,7 @@
 ## Multi-Authentication Fixed
 https://hdtuto.com/article/multi-database-connection-in-laravel-8-example
 https://dev.to/donejeh/common-mistake-sharing-session-across-multiple-laravel-subdomain-2a51
+https://stackoverflow.com/questions/31847054/how-to-use-multiple-databases-in-laravel
 
 ## Vhost
 add to /etc/apache2/sites-available/money.test.conf :
