@@ -24,6 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/globallogin', function () {
     return redirect('http://accounts.robist.test/login');
 })->name('GlobalLogin');
+Route::get('/globalregister', function () {
+    return redirect('http://accounts.robist.test/register');
+})->name('GlobalRegister');
 
 Route::get('/accounts', function () {
     return redirect('http://accounts.robist.test');
