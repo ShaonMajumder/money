@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SprintController;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,11 +30,12 @@ Route::get('/globalregister', function () {
     return redirect('http://accounts.robist.test/register');
 })->name('GlobalRegister');
 
+
+
+
 Route::get('/accounts', function () {
     return redirect('http://accounts.robist.test');
 })->name('accounts');
-
-
 
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users');
 Route::get('/tasks', [App\Http\Controllers\SprintController::class, 'index'])->name('sprint');
@@ -40,6 +43,3 @@ Route::get('/tasks', [App\Http\Controllers\SprintController::class, 'index'])->n
 
 Route::post('sprint/sortabledatatable', [App\Http\Controllers\SprintController::class, 'updatePosition'])->name('links_update');
 Route::post('sprint/newtask', [App\Http\Controllers\SprintController::class, 'store'])->name('new_task');
-
-
-
