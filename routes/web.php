@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SprintController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +25,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/globallogin', function () {
+Route::get('/globallogin', function () { 
+    session(['back_url' => url()->previous()]);
     return redirect('http://accounts.robist.test/login');
 })->name('GlobalLogin');
+
 Route::get('/globalregister', function () {
     return redirect('http://accounts.robist.test/register');
 })->name('GlobalRegister');
