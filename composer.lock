@@ -2823,6 +2823,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "symfony/mailer",
             "time": "2021-10-18T15:26:12+00:00"
         },
         {
@@ -7438,7 +7439,6 @@
                     "type": "github"
                 }
             ],
-            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
